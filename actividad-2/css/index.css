@@ -39,3 +39,10 @@ ul{
     padding: 15px;
 
 }
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: flex;
+    gap: 16px;
+  }
