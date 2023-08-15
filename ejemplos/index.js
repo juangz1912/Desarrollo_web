@@ -110,9 +110,35 @@ const crearNombreCompleto = (nombre, apellido) => {
         let name = nombre[0] + " " + apellido
         console.log("94 " + name);
     }
-    console.log("92 " + name);
-
-
-    
+    console.log("92 " + name); 
 }
 crearNombreCompleto(nombre, apellido)
+
+// ARRAY
+let estudiantes = []
+
+// Agregar un elemento
+// estudiantes.push(5)
+// estudiantes.push(null)
+// estudiantes.push({})
+// estudiantes.push(()=> {console.log(); })
+estudiantes.push({ "nombre":"JuanJo", id:1000414766 })
+estudiantes.push({ "nombre":"Maria", id:14766 })
+estudiantes.push({ "nombre":"Maria", id:1466 })
+
+estudiantes.forEach( (x) => console.log(x.nombre) )
+
+for (let index = 0; index < estudiantes.length; index++) {
+    if (estudiantes[index].nombre == "Maria") {
+        console.log(estudiantes[index].id);        
+    };
+    
+}
+const maria = estudiantes.find(x=>x.nombre == "Maria")
+console.log(estudiantes);
+
+const marias = estudiantes.filter(x=>x.nombre == "Maria")
+marias[0].id
+
+estudiantes = estudiantes.map(x=> {return {...x, edad:null}})
+console.log(estudiantes);
