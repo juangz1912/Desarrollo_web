@@ -1,0 +1,26 @@
+body{
+    color: aliceblue;
+    background-color: white;
+}
+header{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+ol{
+    color: black;
+    text-align: left;
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+p{
+    text-align: center;
+    color: black;
+}
+a{
+    display: flex;
+    justify-content: center;
+}
