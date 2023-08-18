@@ -11,65 +11,75 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Desarrollo web</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+                <a class="nav-link" href="#">Sobre nosotros</a>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Juan Jose Giraldo Zuluaga
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </div>
         </div>
       </nav>
-      <div>
-        <button type="button" class="">Base class</button>
-        <button type="button" class="btn">Base class</button>
-      </div>
-      <div><section class="layout">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </section></div>
-    <!-- <nav>
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="news">News</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li><a href="about">About</a></li>
-    </ul>    
-    </nav> -->
-    <!-- <div class="container">
-        <div class="element"> <p> hola hola hola</p>
-        </div>
-    </div> -->
+      <main>
+        <div class="container">
+          <center>
+            <h1>Formulario de tareas y actividades</h1>
+          </center>
+          <form action="javascript:void(0)" onsubmit="getDataForm()">
+            <label for="txtName" class="form-label">Nombre</label>
+            <input required id="txtName" name="txtName" type="text" placeholder="Ingrese su nombre" class="form-control">
+            <br>
+            <label for="txtEmail" class="form-label">Correo</label>
+            <input id="txtEmail" name="txtEmail" type="email" placeholder="Ingrese su correo" class="form-control">
+            <br>
+            <label for="txtTask" class="form-label">Descripcion tarea</label>
+            <br>
+            <textarea name="txtTask" id="txtTask" cols="10" rows="3" class="form-control"></textarea>
+            <br>
+            <input type="checkbox" name="acceptCondition" id="acceptConditions" class="form-check-input">
+            <label for="acceptConditions" class="form-check-label">
+              <a href="http://google.com" target="_blank">Acepta terminos y condiciones</a>
+            </label>
+            <br>
+            <label for="taskType" class="form-label">Tipo de tarea</label>
+            <br>
+            <input type="radio" name="taskType" id="typeA" class="form-check-input"> Actividad
+            <br>
+            <input type="radio" name="taskType" id="typeB" class="form-check-input"> Tarea
+            <br>
+            <label class="form-label" for="semester">Semestre</label>
+            <select class="form-control" name="semester" id="semester">
+              <option value="1">Semestre 1</option>
+              <option value="1">Semestre 2</option>
+              <option value="1">Semestre 3</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+
+          </form>
+        </div>  
+      </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
     crossorigin="anonymous"></script>
 
-    <script src="/ejemplos/index.js"> </script>
+    <script src="index.js"> </script>
 </body>
 </html></html>
