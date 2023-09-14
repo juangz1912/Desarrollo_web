@@ -3,9 +3,9 @@ const getDataForm = () => {
     const txtEmail = document.getElementById("txtEmail").value
     const txtDescription = document.getElementById("txtTask").value
     const acceptConditions = document.getElementById("acceptConditions").checked
-    const typeA = document.getElementById("typeA").value
-    const typeB = document.getElementById("typeB").value
-    const period = document.getElementById("semester").value
+    const typeA = document.getElementById("typeA").checked
+    const typeB = document.getElementById("typeB").checked
+    const period = document.getElementById("semester").checked
 
 
     // JSON {clave:valor}
